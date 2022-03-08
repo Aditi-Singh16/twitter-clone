@@ -69,7 +69,7 @@ class _SpacesFormState extends State<SpacesForm> {
                 )
               ],
             ),
-            SizedBox(height: 20,),
+            SizedBox(height: 10,),
             Form(
               key: _formKey,
               child: Column(
@@ -89,7 +89,7 @@ class _SpacesFormState extends State<SpacesForm> {
                       hintText: 'What would you like to talk about?',
                       hintStyle: TextStyle(
                         color: Colors.grey,
-                        fontSize: 20
+                        fontSize: 16
                       )
                     ),
                   ),

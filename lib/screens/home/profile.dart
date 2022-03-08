@@ -240,7 +240,7 @@ class _ProfileState extends State<Profile> {
                                             fontWeight: FontWeight.w100
                                         ),
                                       ),
-                                      SizedBox(width: MediaQuery.of(context).size.width*0.22),
+                                      SizedBox(width: MediaQuery.of(context).size.width*0.10),
                                       Text(user['Tweets'][i]['date'],
                                         style:TextStyle(
                                             color:Colors.grey,
@@ -255,7 +255,7 @@ class _ProfileState extends State<Profile> {
                                   Text(
                                       user['Tweets'][i]['description'],
                                       style:TextStyle(
-                                        fontSize: 18,
+                                        fontSize: 15,
                                         fontStyle: FontStyle.normal,
                                       )
                                   ),
