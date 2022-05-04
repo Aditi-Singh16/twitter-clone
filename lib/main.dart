@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:twitter_clone/screens/home/alltweets.dart';
 import 'package:twitter_clone/screens/home/profile.dart';
 import 'package:twitter_clone/screens/home/spaces.dart';
 import 'package:twitter_clone/screens/home/spacesForm.dart';
@@ -48,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
   static const _widgetOptions = <Widget>[
-    Text('home'),
+    AllTweets(),
     Text(
         'search'
     ),
@@ -118,13 +119,21 @@ class _MyHomePageState extends State<MyHomePage> {
       AppBar(
         elevation: 0.4,
         backgroundColor: Colors.white,
-        title: Text('Notifications'),
+        title: Text('Notifications',style: TextStyle(
+            color: Colors.black,
+            letterSpacing: 0.6,
+            fontSize: 20
+        ),),
         leading: Icon(Icons.person_sharp,color:Colors.black),
       ),
       AppBar(
         backgroundColor: Colors.white,
         elevation: 0.4,
-        title: Text('Mail'),
+        title: Text('Mail',style: TextStyle(
+            color: Colors.black,
+            letterSpacing: 0.6,
+            fontSize: 20
+        ),),
         leading: Icon(Icons.person_sharp,color:Colors.black),
       ),
 
